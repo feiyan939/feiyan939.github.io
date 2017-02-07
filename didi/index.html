@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>滴滴打车</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <script type="" src='js/flexible.debug.js'></script>
+    <script src='js/lib/jquery-3.1.1.min.js'></script>
+    <script src='js/index.js'></script>
+</head>
+
+<body class="page1">
+    <div class="bg">
+        <div class="bgBox">
+            <div class="bgdots"></div>
+            <div class="circleOuter"></div>
+            <div class="circleMiddle"></div>
+            <div class="circleInner"></div>
+            <div class="blackBox"></div>
+        </div>
+        <div class="earth">
+            <div class="earthLines earthList">
+                <div class="lines list1"></div>
+                <div class="lines list2"></div>
+                <div class="lines list3"></div>
+            </div>
+            <div class="earthLines earthRow">
+                <div class="lines row1"></div>
+                <div class="lines row2"></div>
+                <div class="lines row3"></div>
+                <div class="lines row4"></div>
+                <div class="lines row5"></div>
+                <div class="lines row6"></div>
+            </div>
+            <div class="earthBd"></div>
+            <span class="spot spot1"></span>
+            <span class="spot spot2"></span>
+            <span class="spot spot3"></span>
+            <span class="spot spot4"></span>
+            <span class="spot spot5"></span>
+        </div>
+    </div>
+    <!-- 音乐按钮 -->
+    <!-- 音乐文件播放位置 -->
+        <span id="musicBtn" class="play"></span>
+        <span class="stop"></span>
+        <!-- <div class="music"> -->
+        <audio class="audio" src="audio/bg.mp3" id="media" loop autoplay="autoplay" preload="auto"></audio>
+    </div>
+
+    <!--  换页按钮-->
+    <span class="downBtn" id='next'></span>
+    <span class="upBtn" id='pre'></span>
+    <!--第一个页面的文字-->
+    <div class="floor" id="floor11">
+        <h1 class="floor1TextImg"></h1>
+        <!-- 背景图片 -->
+    </div>
+    <!-- 第二页 -->
+    <div class="floor" id="floor2">
+        <h2>滴滴出行开放平台简介</h2>
+        <div class="floor2Text">
+            <div>
+                <p>滴滴开放平台为移动应用</p>
+                <p>提供了便捷的合作模式，满足了</p>
+                <p>多元化移动终端随时随地呼叫滴滴</p>
+                <p>出行用车需求，为出行强相关APP提</p>
+                <p>供了功能补充，助力探索智能终端的</p>
+                <p>社会化接入，同时为广大开发者打</p>
+                <p> 开新思路，支持基于滴滴出行</p>
+                <p></p>
+                <p>的创业、创新。</p>
+            </div>
+        </div>
+    </div>
+    <!-- 第三页 -->
+    <div class="floor" id="floor3">
+        <h2>滴滴出行的优势</h2>
+        <ul class="floor3Ul">
+            <li class="floor3Ulli1">
+                <p class="iconBg"></p>
+                <p class="text">较强的品牌影响力</p>
+                <p class="text">和知名度</p>
+            </li>
+            <li class="floor3Ulli2">
+                <p class="iconBg"></p>
+                <p class="text">雄厚的技术实力</p>
+            </li>
+            <li class="floor3Ulli3">
+                <p class="iconBg"></p>
+                <p class="text">及时高效的技术支持</p>
+            </li>
+            <li class="floor3Ulli4">
+                <p class="iconBg"></p>
+                <p class="text">成熟的分成模式</p>
+            </li>
+        </ul>
+    </div>
+    <!-- 第四页 -->
+    <div class="floor" id="floor4" >
+        <h2>滴滴出行SDK功能</h2>
+        <ul class="floor3Ul">
+            <li class="floor3Ulli1">
+                <p class="iconBg"></p>
+                <p class="text">实时、预约</p><p class="text">叫车功能</p>
+            </li>
+            <li class="floor3Ulli2">
+                <p class="iconBg"></p>
+                <p class="text">打车费用</p><p class="text">预估</p>
+            </li>
+            <li class="floor3Ulli3">
+                <p class="iconBg"></p>
+                <p class="text">等待时间</p><p class="text">预估</p>
+            </li>
+            <li class="floor3Ulli4">
+                <p class="iconBg"></p>
+                <p class="text">数据统计</p><p class="text">接口</p>
+            </li>
+        </ul>
+    </div>
+    <!-- 第五页 -->
+    <div class="floor" id="floor5">
+        <h2>接口合作案例展示</h2>
+        <ul class="f5ul">
+            <li class="f5ulli f5ulli1"><img src="images/app_wechat.png" ><span>+</span></li>
+            <li class="f5ulli f5ulli2"><img src="images/app_alipay.png" ><span>+</span></li>
+            <li class="f5ulli f5ulli3"><img src="images/app_ctrip.png" ><span>+</span></li>
+            <li class="f5ulli f5ulli4"><img src="images/app_mi.png" ><span>+</span></li>
+            <li class="f5ulli f5ulli5"><img src="images/app_sogou.png" ><span>+</span></li>
+            <li class="f5ulli f5ulli6"><img src="images/app_qqbrowser.png" ><span>+</span></li>
+            <li class="f5ulli f5ulli7"><img src="images/app_elong.png" ><span>+</span></li>
+            <li class="f5ulli f5ulli8"><img src="images/app_t360.png" ><span>+</span></li>
+            <li class="f5ulli f5ulli9"><img src="images/app_guoguan.png" ><span>+</span></li>
+        </ul>
+   </div>
+   <!--点击li1之后显示的图片是 -->
+    <!-- 第六页 -->
+    <div class="floor" id="floor6">
+        <h2>开放平台合作流程</h2>
+        <ul class="f6ul">
+            <li class="f6ulli f6ulli1"><span class="span1">01</span><span>合作方在开发者后台注册、下载SDK</span></li>
+            <li class="f6ulli f6ulli2"><span class="span1">02</span><span>敲定商务模式，签订开放平台合作协议</span></li>
+            <li class="f6ulli f6ulli3"><span class="span1">03</span><span>滴滴审核合作方资料并分配独立ID与秘钥</span></li>
+            <li class="f6ulli f6ulli4"><span class="span1">04</span><span>合作双方上线联调</span></li>
+            <li class="f6ulli f6ulli5"><span class="span1">05</span><span>上线后申请营销资源</span></li>
+            <li class="f6ulli f6ulli6"><span class="span1">06</span><span>查看数据，评估合作效果</span></li>
+        </ul>
+
+    </div>
+    <!-- 第七页 -->
+    <div class="floor7" id="floor7">
+        <h3>现在加入</h3>
+        <img class="f7img" src="images/ewm.png" alt="">
+        <div class="f7div" >
+            <p>长按二维码可直接关注</p>
+            <p>官方邮箱 api@didichuxing.com </p>
+        </div>
+    </div>
+
+  
+    <span class='logo'></span>
+</body>
+
+</html>

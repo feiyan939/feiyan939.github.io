@@ -1,0 +1,830 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f98919;
+    color: #fff;
+    margin: 0;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bgBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -7.707rem 0 0 -7.707rem;
+    width: 15.413rem;
+    height: 15.413rem;
+    -webkit-transition: .5s;
+    transition: 0.5s;
+}
+
+.bgBox1,
+.lines1 {
+    animation: bgBox1 2s linear forwards;
+}
+
+@keyframes bgBox1 {
+    to {
+        transform: scale(1.5);
+    }
+}
+
+.bgdots {
+    position: absolute;
+    top: 1.427rem;
+    left: 1.427rem;
+    width: 12.547rem;
+    height: 12.547rem;
+    background: url(../images/bg_dots.png) 50% no-repeat;
+    background-size: contain;
+    /*contain:把图像图像扩展至最大尺寸，以使其宽度和高度完全适应内容区域。 */
+    animation: bgdots 100s linear infinite;
+    -webkit-animation: bgdots 100s linear infinite;
+}
+
+@keyframes bgdots {
+    from {}
+    to {
+        transform: rotateZ(-360deg);
+    }
+}
+
+@-webkit-keyframes bgdots {
+    from {}
+    to {
+        transform: rotateZ(-360deg);
+    }
+}
+
+.circleOuter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg_circle_outer.png) 0 0 no-repeat;
+    background-size: contain;
+    animation: bgcircleOuter 60s linear infinite;
+    -weblit-animation: bgcircleOuter 60s linear infinite;
+}
+
+@keyframes bgcircleOuter {
+    from {}
+    to {
+        transform: rotateZ(360deg)
+    }
+}
+
+@-webkit-keyframes bgcircleOuter {
+    from {}
+    to {
+        transform: rotateZ(360deg)
+    }
+}
+
+.circleMiddle {
+    position: absolute;
+    top: 0.92rem;
+    left: 0.92rem;
+    width: 13.573rem;
+    height: 13.573rem;
+    background: url(../images/bg_circle_middle.png) 50% no-repeat;
+    background-size: contain;
+    animation: cieclemiddle 80s linear infinite;
+    -webkit-animation: cieclemiddle 80s linear infinite;
+}
+
+@keyframes cieclemiddle {
+    from {}
+    to {
+        transform: rotateZ(360deg)
+    }
+}
+
+@-webkit-keyframes cieclemiddle {
+    from {}
+    to {
+        transform: rotateZ(360deg)
+    }
+}
+
+.circleInner {
+    position: absolute;
+    top: 0.92rem;
+    left: 0.92rem;
+    width: 13.573rem;
+    height: 13.573rem;
+    background: url(../images/bg_circle_inner.png) 50% no-repeat;
+    background-size: contain;
+    animation: circleinner 30s linear infinite;
+    -webkit-animation: circleinner 30s linear infinite;
+}
+
+@keyframes circleinner {
+    from {}
+    to {
+        transform: rotateZ(-360deg)
+    }
+}
+
+@-webkit-keyframes circleinner {
+    from {}
+    to {
+        transform: rotateZ(-360deg)
+    }
+}
+
+.bgBox .blackBox {
+    width: 8.0rem;
+    height: 8.0rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #021627;
+    border-radius: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    -webkit-transform: translate3d(-50%, -50%, 0);
+}
+/* .earth {
+    width: 8.453rem;
+    height: 8.453rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    left: 0.0rem;
+    right: 0.0rem;
+    margin:auto;
+    background-size: cover;
+    把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。
+        背景图像的某些部分也许无法显示在背景定位区域中。
+    border-radius: 50%;
+    transform:0.5s;
+    -webkit-transform:0.5s;
+} */
+
+.earth {
+    position: absolute;
+    width: 8.453rem;
+    height: 8.453rem;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    background: #021627;
+    /*     -webkit-background-size: cover;
+background-size: cover; */
+    border-radius: 50%;
+    -webkit-transition: 0.5s;
+    transition: 0..5s;
+}
+
+.earthani {
+    width: 12rem;
+    height: 12rem;
+}
+
+.earth .earthLines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.earth .earthList .lines {
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+.earth .lines {
+    position: absolute;
+    top: 0;
+    left: 0.0rem;
+    /* right: 0.0rem; */
+    /* margin: auto; */
+    width: 100%;
+    height: 100%;
+    border: 0.013rem solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.earth .list1 {
+    width: 20%;
+}
+
+.earth .list2 {
+    width: 51%;
+}
+
+.earth .list3 {
+    width: 75%;
+}
+
+
+/* .earthl{
+     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0.013rem solid rgba(255,255,255,0.2);
+  
+    border-radius: 50%;
+}
+.earthLineH1 {
+    width: 21.45%;
+}
+ */
+
+.earthRow {
+    animation: earthrow 10s linear infinite;
+    -webkit-animation: earthrow 10s linear infinite;
+}
+
+.earthRowani {
+    animation: earthrow 20s linear infinite;
+}
+
+@keyframes earthrow {
+    to {
+        -webkit-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+    }
+}
+
+.earthRow .row1 {
+    transform: rotateX(30deg);
+    -webkit-transform: rotateX(30deg);
+}
+
+.earthRow .row2 {
+    transform: rotateX(60deg);
+    -webkit-transform: rotateX(60deg);
+}
+
+.earthRow .row3 {
+    transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+}
+
+.earthRow .row4 {
+    transform: rotateX(120deg);
+    -webkit-transform: rotateX(120deg);
+}
+
+.earthRow .row5 {
+    transform: rotateX(150deg);
+    -webkit-transform: rotateX(150deg);
+}
+
+.earthRow .row6 {
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+}
+
+ .earthBd {
+    position: absolute;
+    top: -0.107rem;
+    left: 50%;
+    margin-left: -1.28rem;
+    width: 2.56rem;
+    height: 8.7rem;
+    background: url(../images/earth_bd.png) 0 0 no-repeat;
+    background-size: 100%;
+    -webkit-background-size: 100%;
+    display: none;
+} 
+.earthLines11{
+    border: 2px solid orange;
+    border-radius: 50%;
+}
+
+.spot {
+    position: absolute;
+    font-size: 0.267rem;
+    width: 1em;
+    height: 1em;
+    background: url(../images/spot.png) 0 0 no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    animation: spot11 1.5s ease in out infinite;
+    -webkit-animation: spot11 1.5s ease in out infinite;
+}
+
+@keyframes spot11 {
+    50% {
+        opacity: 0.2;
+    }
+}
+
+@-webkit-keyframes spot11 {
+    50% {
+        opacity: 0.2
+    }
+}
+
+.spot1 {
+    top: 1.12rem;
+    left: 5.76rem;
+}
+
+.spot2 {
+    top: 4.12rem;
+    left: 6.76rem;
+    -webkit-animation-delay: -0.2s;
+    animation-delay: -0.2s;
+    font-size: 0.4rem;
+}
+
+.spot3 {
+    top: 6.12rem;
+    left: 5.76rem;
+    -webkit-animation-delay: -0.3s;
+    animation-delay: -0.3s;
+}
+
+.spot4 {
+    top: 7.12rem;
+    left: 2.76rem;
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+    font-size: 0.6rem;
+}
+
+.spot5 {
+    top: 3.12rem;
+    left: 0.76rem;
+    webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+
+/* #floor11 {
+    text-align: center;
+    width: 8.453rem;
+    height: 8.453rem;
+    -webkit-animation: fadeIn 0.4s;
+    animation: fadeIn 0.4s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+} */
+
+.floor1TextImg {
+    margin: 2.933rem auto 0;
+    width: 5.467rem;
+    height: 2.667rem;
+    background: url(../images/title.png) no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    display: block;
+}
+
+.floor {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    width: 100%;
+    height: 12.8rem;
+    display: block;
+}
+
+.logo {
+    position: fixed;
+    bottom: 0.9rem;
+    left: 50%;
+    margin-left: -1.333rem;
+    width: 2.667rem;
+    height: 0.867rem;
+    background: url(../images/logo.png) no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+
+/* 音乐按钮*/
+
+.stop {
+    width: 0.587rem;
+    height: 0.587rem;
+    background: url(../images/music_off.png) no-repeat 50%;
+    -webkit-background-size: contain;
+    background-size: contain;
+    position: fixed;
+    top: 0.267rem;
+    right: 0.267rem;
+    display: none;
+}
+.play {
+    width: 0.587rem;
+    height: 0.48rem;
+    background-image: url(../images/music_on.png);
+    -webkit-background-size: contain;
+    background-size: contain;
+    position: fixed;
+    top: 0.267rem;
+    right: 0.267rem;
+    display: block;
+}
+
+.downBtn {
+    width: 1.333rem;
+    height: 1.333rem;
+    background: url(../images/down.png) 50% no-repeat;
+    position: absolute;
+    top: 12.90rem;
+    left: 0.0rem;
+    right: 0.0rem;
+    margin: auto;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.upBtn {
+    width: 1.333rem;
+    height: 1.333rem;
+    background: url(../images/up.png) 50% no-repeat;
+    position: absolute;
+    top: 1.9rem;
+    left: 0.0rem;
+    right: 0.0rem;
+    margin: auto;
+    border-radius: 50%;
+    z-index: 100;
+    display: none;
+    opacity: 0.5;
+}
+#floor2{
+    display: none;
+}
+
+.floor2Text{
+    width: 16.2rem;
+    margin:2.867rem auto 0;
+    margin-left: -60px;
+    line-height: 1.5;
+    -webkit-animation: fadeInUp .7s .5s ease-out backwards;
+    animation: fadeInUp .7s .5s ease-out backwards;
+}
+@keyframes fadeInUp{
+    0%{
+        -webkit-transform: translate3d(0, 0.667rem, 0);
+        transform: translate3d(0, 0.667rem, 0);
+        opacity: 0;
+    }
+}
+.floor h2 {
+    width: 5.333rem;
+    font-weight: 700;
+    font-size: 0.427rem;
+    color: #F98919;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    border-radius: 2.067rem;
+    margin-left: 2.333rem;
+    margin-top: -0.253rem;
+    -webkit-animation: floor2Title 1s linear alternate ;
+    animation: floor2Title 1s linear alternate ; 
+}
+@keyframes floor2Title{
+    0%{-webkit-transform: rotateX(-90deg)};  
+    0%{transform:rotateX(-90deg)}   
+}
+
+
+
+
+#floor2 h2{
+    display: none;
+}
+#floor3 h2{
+    display: none;
+}
+#floor4 h2{
+    display: none;
+}
+#floor5 h2{
+    display: none;
+}
+#floor6 h2{
+    display: none;
+}
+
+
+
+
+.floor2Text>div{
+    left: 1.333rem;
+    font-size: 0.44rem;
+    text-align: center;
+    margin-left: -3.2rem;
+}
+/* // 第三张内容 */
+#floor3,#floor4{
+    display: none;
+}
+#floor3 .floor3Ul,#floor4 .floor3Ul{
+    display: none;
+    overflow: hidden;
+}
+#floor3 .floor3Ul>li,#floor4 .floor3Ul>li{
+    list-style: none;
+    float: left;
+    background:  url(../images/icon_bg.png) 50% no-repeat;
+    height: 3.947rem;
+    background-size: contain;
+}
+#floor3 .floor3Ul>li ,#floor4 .floor3Ul>li{
+    margin-left: 35px;
+    margin-top: 15px;
+     /*  cubic-bezier即为贝兹曲线中的绘制方法,cubic-bezier(x1, y1, x2, y2) 为自定义，x1,x2,y1,y2的值范围在[0, 1] */
+     -webkit-animation: scaleIn 0.5s backwards cubic-bezier(0, 0, 0.54, 1.55); 
+     animation: scaleIn 0.5s backwards cubic-bezier(0, 0, 0.54, 1.55); 
+}
+#floor4 .floor3Ul>li{
+    width: 3.947rem;
+}
+@keyframes scaleIn{
+    0%{
+        transform:scale(0.5);
+        -webkit-transform:scale(0.5);
+        opacity: 0;
+    }
+}
+#floor3 .text ,#floor4 .text{
+    display: block;
+    color: #F98919;
+    line-height: 1.5;
+    font-size: 17px;
+    margin-left: 15px;
+    text-align: center;
+}
+#floor3 .floor3Ulli1,#floor4 .floor3Ulli1{
+    animation-delay:0.5s;
+    -webkit-animation-delay:0.5s;
+    top: 2.667rem;
+    right: 2.133rem;
+}
+#floor3 .floor3Ulli1 .iconBg{
+    background: url(../images/f3_icon1.png) no-repeat;
+    background-size: 100%;
+}
+#floor4 .floor3Ulli1 .iconBg{
+    background: url(../images/f4_icon1.png) no-repeat;
+    background-size: 100%;
+}
+#floor3 .iconBg,#floor4 .iconBg{
+    display: block;
+    margin: 0.633rem auto 0.267rem;
+    width: 1.067rem;
+    height: 1.067rem;
+    background: no-repeat 50%;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+#floor3 .floor3Ulli2,#floor4 .floor3Ulli2{
+     animation-delay:1.0s;
+    -webkit-animation-delay:1.0s;
+    top: 5.333rem;
+    left: 0.933rem;
+}
+#floor3 .floor3Ulli2>.iconBg{
+    background:  url(../images/f3_icon4.png) no-repeat;
+    background-size: 100%;
+}
+#floor4 .floor3Ulli2>.iconBg{
+    background:  url(../images/f4_icon2.png) no-repeat;
+    background-size: 100%;
+}
+
+#floor3 .floor3Ulli3,#floor4 .floor3Ulli3{
+     animation-delay:1.5s;
+    -webkit-animation-delay:1.5s;
+    top: 5.333rem;
+    right: 0.933rem;
+}
+#floor3 .floor3Ulli3>.iconBg{
+    background:  url(../images/f3_icon3.png) no-repeat;
+    background-size: 100%;
+}
+#floor4 .floor3Ulli3>.iconBg{
+    background:  url(../images/f4_icon3.png) no-repeat;
+    background-size: 100%;
+}
+#floor3 .floor3Ulli4,#floor4 .floor3Ulli4{
+     animation-delay:2.0s;
+    -webkit-animation-delay:2.0s;
+    top: 7.467rem;
+    right: 1.6rem;
+}
+#floor3 .floor3Ulli4>.iconBg{
+    background:  url(../images/f3_icon2.png) no-repeat;
+    background-size: 100%;
+}
+
+
+#floor4 .floor3Ulli4>.iconBg{
+    background:  url(../images/f4_icon4.png) no-repeat;
+    background-size: 100%;
+}
+
+
+
+#floor5{
+    display: none;
+}
+.f5ul{
+    overflow: hidden;
+    width: 8.5rem;
+    margin-left: 0.4rem;
+    margin-top: 1.4rem;
+}
+
+.f5ul>.f5ulli{
+    position: relative;
+    float: left;
+    width: 1.707rem;
+    height: 1.707rem;
+    margin-left:1rem;
+    margin-bottom: 0.707rem;
+    -webkit-animation: f5ulli  0.5s  linear; 
+    animation: f5ulli  0.5s  linear;
+
+}
+@keyframes f5ulli{
+    0%{
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    
+}
+.f5ul>.f5ulli>img{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.f5ul>.f5ulli>span{
+    position: absolute;
+    top: 0.093rem;
+    left: 0.5rem;
+    display: block;
+    font-size: 40px;
+    -webkit-animation:f5span 1.5s linear infinite alternate;
+    animation:f5span 1.5s linear infinite alternate;
+}
+@keyframes f5span{
+    0%{
+        -webkit-transform:scale(0);
+        transform:scale(0);
+    }
+}
+/* // 点击li1之后显示的页面 */
+
+#floor6{
+    margin-bottom: 0.4rem; 
+    display: none;   
+}
+.f6ul{
+    position: absolute;
+    top: 36px;
+    left: 20px;
+    background:  url(../images/f6_line.png)  no-repeat;
+    background-size: 100%;
+    width: 8.147rem;
+    height: 9.28rem;
+    font-size: 0.213rem;
+}
+.f6ul>li{
+    font-size: 0.4rem;
+
+}
+.f6ul>li>span{
+    text-align: center;
+}
+.f6ul>.f6ulli1{
+    position: absolute;
+    left: 0.927rem;
+    top: 0.253rem;
+    animation:f6ulli1 1s linear;
+    -webkit-animation:f6ulli1 1s linear  ;
+    animation-delay:1s;
+}
+@keyframes f6ulli1{
+    0%{-webkit-transform: translate3d(0.667rem, 0, 0);
+    transform: translate3d(0.667rem, 0, 0);
+    opacity: 0;
+    }
+}
+.f6ul>.f6ulli2{
+    position: absolute;
+    left: 0.107rem;
+    top: 1.893rem;
+    animation:f6ulli1 1s linear;
+    -webkit-animation:f6ulli1 1s linear  ;
+    animation-delay:2s;
+}
+
+.f6ul>.f6ulli3{
+    position: absolute;
+    left: -0.14rem;
+    top: 3.573rem;
+    animation:f6ulli1 1s linear;
+    -webkit-animation:f6ulli1 1s linear  ;
+    animation-delay:3s;
+}
+.f6ul>.f6ulli4{
+    position: absolute;
+    left: 0.1rem;
+    top: 5.373rem;
+     animation:f6ulli1 1s linear;
+    -webkit-animation:f6ulli1 1s linear  ;
+    animation-delay:4s;
+}
+.f6ul>.f6ulli5{
+    position: absolute;
+   left: 0.9rem;
+    top: 6.8rem;
+     animation:f6ulli1 1s linear;
+    -webkit-animation:f6ulli1 1s linear  ;
+    animation-delay:5s;
+}
+.f6ul>.f6ulli6{
+    position: absolute;
+    left: 2.153rem;
+    top: 8rem;
+     animation:f6ulli1 1s linear;
+    -webkit-animation:f6ulli1 1s linear  ;
+    animation-delay:6s;
+}
+.f6ul>li>.span1{
+    width: 0.667rem;
+    height: 0.667rem;
+    background-color: #F98919;
+    border-radius: 50%;
+}
+#floor7{
+     display: none; 
+    text-align: center;
+}
+#floor7>h3{
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    line-height: 1.4rem;
+    font-size: 0.7rem;
+    font-family: '宋体';
+    opacity: 0.8;
+}
+#floor7>.f7img{
+    display: block;
+    width: 8.453rem;
+    height: 8.453rem;
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    margin: auto;
+    right: 0;
+}
+ .f7div{
+    position: absolute;
+    bottom: 5.5rem;
+    left: 0;
+    right: 0;
+    font-size: 0.34rem;
+} 
+
+
+

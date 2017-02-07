@@ -1,0 +1,129 @@
+.clear:after{
+	display: block;
+	overflow: hidden;
+	clear:both;
+	 height: 0;
+	 content: ''
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+body{
+	font-size: 14px;
+	font-family: '微软雅黑';
+}
+.box{
+	width: 100%;
+	background: rgba(0,0,0,.8);
+	box-shadow: 0 2px 4px rgba(0,0,0,.5);
+}
+
+.nav{
+	width: 960px;
+	margin:0 auto;
+}
+.logo{
+	width: 392px;
+	float: left;
+}
+.logo>img{
+	width: 392px;
+	height: 80px;
+}
+#navList{
+	float: left;
+
+}
+#navList>a{
+	display: block;
+	line-height: 30px;
+	margin-top: 20px;
+	float: left;
+	height: 30px;
+	padding:15px 20px;
+	color:#fff;
+
+}
+#navList>.personal{
+	margin-left: 28px;
+	color: #ffe100;
+}
+#navList>.nav_signup{
+	height: 53px;
+	line-height: 68px;
+	margin-top: 0px;
+	font-weight: 700;
+    padding: 14px 20px;
+    color: #333;
+    border: 1px solid #ffe100;
+    background: #ffe100;
+}
+.nav-lang{
+	line-height: 20px;
+	/* position: relative; */
+
+	height: 40px;
+	padding:10px 20px;
+	text-align: center;
+}
+.nav_p{
+	/* position: relative; */
+	line-height: 20px;
+	height: 40px;
+	padding:10px 20px;
+	text-align: center;
+}
+
+
+
+.slidebg1{
+	width: 1400px;
+	height: 600px;
+}
+
+
+
+
+
+
+
+
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
