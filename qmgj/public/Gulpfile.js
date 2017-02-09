@@ -23,7 +23,7 @@ gulp.task('less-min',function(){
             title: "Gulp",
             subtitle: "Failure!",
             message: "less error: <%= error.message %>",
-            sound: "Beep"
+            sound: "Beep"   
         })(err);
         this.emit('end');
     };

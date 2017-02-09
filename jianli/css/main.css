@@ -474,3 +474,7 @@ cursor: pointer;
 .cube:hover .out_bottom{
 	transform: rotateX(-90deg) translateZ(200px);
 }
+
+.address{
+	color:black;
+}
